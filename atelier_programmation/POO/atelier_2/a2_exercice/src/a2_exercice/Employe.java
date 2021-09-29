@@ -14,7 +14,7 @@ public class Employe extends Personne{
 		this.dateEmbauche = dateEmbauche;
 	}
 
-	public Object createEmploye(GregorianCalendar dateNaissance) {
+	public Employe createEmploye(GregorianCalendar dateNaissance) {
 		LocalDate ld = dateNaissance.toZonedDateTime().toLocalDate();
 	    LocalDate dateEmbauche = LocalDate.now();
 	    

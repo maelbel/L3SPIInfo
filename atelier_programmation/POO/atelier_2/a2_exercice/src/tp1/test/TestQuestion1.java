@@ -27,8 +27,8 @@ public class TestQuestion1 {
 							+ pers2.equals(pers3));
 		
 		System.out.println("Création de l'employé : " + pers1.getNom() + "\n");
-		//Employe.createEmploye(pers1.getDateNaissance());
-		//System.out.println("L'employé : " +  + "vient d'être créé\n");
+		Employe employe = Employe.createEmploye(pers1.getDateNaissance());
+		System.out.println("L'employé" + employe.getNom() + "vient d'être embauché \n");
 	}
 	
 }
