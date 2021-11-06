@@ -7,6 +7,15 @@ public class TestDe {
 		Des de2 = new Des("Normal dice");
 		Des de3 = new Des(100);
 		Des de4 = new Des("Normal dice");
+		Des de5 = null;
+		
+		try {
+			de5 = new Des("", -5);
+		} catch(IllegalArgumentException e) {
+			System.err.println(e);
+		} catch(NullPointerException e) {
+			System.err.println(e);
+		}
 		
 		//de.setNbFace(2);
 		System.out.println("Le dé 2 à fait: " + de2.lancer());

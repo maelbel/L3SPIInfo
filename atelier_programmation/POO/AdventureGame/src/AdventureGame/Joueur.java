@@ -16,6 +16,8 @@ public class Joueur {
 		this.nom = nom;
 		nbJoueurs++;
 		code = "J" + nbJoueurs;
+		this.nbPoints = 0;
+		this.listePersos = new ArrayList<Personnage>();
 	}
 	
 	public void ajouterPersonnage(Personnage pers){

@@ -1,0 +1,2 @@
+module exercice_exception {
+}

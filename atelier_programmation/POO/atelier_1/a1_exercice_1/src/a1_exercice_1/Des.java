@@ -11,12 +11,18 @@ public class Des {
 	
 	//Constructors
 	//Constructor's when 2 parameters entered
-	public Des(String name, int nbFace) {
-		this.name = name;
+	public Des(String name, int nbFace) throws IllegalArgumentException, NullPointerException{
+		if (name == "") {
+			throw new IllegalArgumentException("Error: name is empty");
+		} else if (name == null) {
+			throw new NullPointerException("Error: name is null");
+		} else {
+			this.name = name;
+		}
 		if (nbFace >= 3 && nbFace <= 120) {
 			this.nbFace = nbFace;
 		} else {
-			System.err.println("Error: number of face not valid for dice: " + name + ". Please try again.");
+			throw new IllegalArgumentException("Error: nbFace is not between 3 and 120");
 		}
 		nbDe++;
 	}
