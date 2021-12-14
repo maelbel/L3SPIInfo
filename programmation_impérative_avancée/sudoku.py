@@ -8,7 +8,7 @@ Created on Thu Oct 15 11:01:41 2020
 
 import numpy as np
 
-Mat = np.loadtxt("Suddoku.txt")
+Mat = np.loadtxt("Sudoku.txt")
 print(Mat)    
 
 def readLine(Mat, i) :
