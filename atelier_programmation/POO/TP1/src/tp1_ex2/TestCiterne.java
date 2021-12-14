@@ -36,8 +36,8 @@ public class TestCiterne {
 		System.out.println(c2.plusAncienne(c1, c2));
 		
 		c1.nettoyage();
-		c1.ajouterLiquide(5000);
 		c1.setLiquide(Liquide.HUILE);
+		c1.ajouterLiquide(5000);
 		
 		System.out.println(c1);
 		System.out.println(c2);

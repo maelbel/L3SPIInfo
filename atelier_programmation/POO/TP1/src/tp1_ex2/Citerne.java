@@ -120,7 +120,7 @@ public class Citerne implements EstComparable, Cloneable {
 		int reste = 0;
 		
 		if(typeLiquide==null) {
-			System.err.println("Error: You must choose a liquid for your tank!");
+			throw new NullPointerException("Error: You must choose a liquid for your tank!");
 		}
 		
 		if(quantite > 1 && this.capacite > quantite + volOccupe) {
