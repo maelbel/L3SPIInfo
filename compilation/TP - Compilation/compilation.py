@@ -305,6 +305,7 @@ PCODE = [
     "STO",
     ["BRN", 18],
     "PRN",
+    "PRN",
     "HLT"]
 
 
