@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author maelb
+ *
+ */
+module TPCollection {
+}
