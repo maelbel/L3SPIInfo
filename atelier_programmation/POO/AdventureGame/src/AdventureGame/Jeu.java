@@ -2,8 +2,6 @@ package AdventureGame;
 
 import java.util.ArrayList;
 
-import a3bis_exercice.Appartement;
-
 public class Jeu {
 	
 	//Attributs

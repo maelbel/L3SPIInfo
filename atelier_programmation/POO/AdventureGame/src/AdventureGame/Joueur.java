@@ -29,6 +29,7 @@ public class Joueur {
 		
 		return nbPoints;
 	}
+	
 	public boolean peutJouer() {
 		boolean valide = true;
 		
